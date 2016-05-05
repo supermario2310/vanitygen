@@ -51,3 +51,12 @@ Sipa's showwallet branch has a new command called "importprivkey" that
 accepts the base-58 encoded private key.  Vanitygen has been tested to 
 work with that version of bitcoin.
 
+EDIT 1: It is now possible to generate vanity addresses for about 90%
+of coins. Just use the -X command with the decimal version of the
+starting letter of the address, like this: (for Litecoin)
+
+$ ./vanitygen -X 48 Lmagic
+
+Then it will generate a Litecoin address. Try importing private keys
+to see if this works. A table with all decimal values for starting
+letters can be found at: http://cryptolife.net/upwg/chart.html
